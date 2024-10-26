@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Kevin Wells</title>
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #FFFFFF;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .portfolio {
+      max-width: 1000px;
+      width: 80%;
+      padding: 40px;
+      background: rgba(39, 39, 39, 0.8);
+      border-radius: 15px;
+      position: relative;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+    .portfolio::before {
+      content: "";
+      background: url('freddy-castro-u3ajSXhZM_U-unsplash.jpg') no-repeat center center;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      border-radius: 15px;
+    }
+    h1 {
+      font-family: 'Shrikhand', cursive;
+      font-size: 5.5rem;
+      color: #FFFFFF;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+      margin-top: 0;
+      margin-bottom: 0;
+      letter-spacing: 5px;
+    }
+    .portfolio-list {
+      padding: 30px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 15px;
+    }
+    .portfolio-item {
+      max-width: 30%;
+    }
+    .portfolio img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .portfolio-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: antiquewhite;
+    }
+    .link {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 12px 24px;
+      border-radius: 5px;
+      border: 2px solid #00D1FF;
+      background: transparent;
+      transition: background 0.3s ease, color 0.3s ease;
+      margin-top: 30px;
+    }
+    .link:hover {
+      background: #00D1FF;
+      color: #141e30;
+    }
+    footer {
+      font-size: 0.6rem;
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+  <div class="portfolio">
+    <h1>Portfolio</h1>
+    <div class="portfolio-list">
+      <div class="portfolio-item">
+        <a href="https://medium.com/@Kevin-wells-tx/style-vs-substance-the-html-css-collaboration-the-web-depends-on-5aa09b92d8d7" target="_blank">
+          <img src="111.webp" alt="Portfolio sample 1">
+          <div class="portfolio-title">Style vs. Substance: The HTML & CSS Collaboration the Web Depends On</div>
+        </a>
+      </div>
+      <div class="portfolio-item">
+        <a href="https://medium.com/@Kevin-wells-tx/the-enduring-pain-of-loss-895f82b6d040" target="_blank">
+          <img src="222.webp" alt="Portfolio sample 2">
+          <div class="portfolio-title">The Enduring Pain of Loss</div>
+        </a>
+      </div>
+      <div class="portfolio-item">
+        <a href="https://medium.com/@Kevin-wells-tx/branching-out-in-html-7a9528edc092" target="_blank">
+          <img src="333.webp" alt="Portfolio sample 3">
+          <div class="portfolio-title">Branching Out (in HTML)</div>
+        </a>
+      </div>
+    </div>
+    <a href="index.html" class="link">Back to Home</a>
+  </div>
+
+  <footer>
+    Photo by <a href="https://unsplash.com/@readysetfreddy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" style="color: #00D1FF;">Freddy Castro</a> on Unsplash
+  </footer>
+</body>
+</html>

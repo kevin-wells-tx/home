@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kevin Wells - Writer / Learner / Developer / Nurse</title>
+  <meta name="description" content="Kevin Wells - Combining healthcare expertise with tech skills to create impactful content and applications.">
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:wght@400;500;700;900&display=swap');
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #FFFFFF;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .container, .contact, .services {
+      max-width: 1000px;
+      width: 80%;
+      padding: 20px;
+      background: rgba(39, 39, 39, 0.8);
+      border-radius: 15px;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    .container::before, .contact::before, .services::before {
+      content: "";
+      background: url('freddy-castro-u3ajSXhZM_U-unsplash.jpg') no-repeat center center;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      border-radius: 15px;
+    }
+    h1 {
+      font-family: 'Shrikhand', cursive;
+      font-size: 5.5rem;
+      color: #FFFFFF;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+      margin-top: 0;
+      margin-bottom: 0;
+      letter-spacing: 5px;
+    }
+    h2 {
+      font-size: 1.6rem;
+      color: #cc61df;
+      margin-top: 5px;
+    }
+    h3 {
+      font-size: 2.5rem;
+      color: #00D1FF;
+      margin-bottom: 10px;
+      font-weight: bold;
+      text-decoration: underline;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+    }
+    .about, .services-list {
+      padding: 30px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .links {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    .link {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 12px 24px;
+      border-radius: 5px;
+      border: 2px solid #00D1FF;
+      background: transparent;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .link:hover {
+      background: #00D1FF;
+      color: #141e30;
+    }
+    .services-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .service-item {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, background 0.3s ease;
+      width: 45%; /* Adjust width for responsive layout */
+    }
+    .service-item:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.2);
+    }
+    .service-item h4 {
+      margin: 0;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+    .service-item p {
+      margin: 0;
+      font-size: 1rem;
+    }
+    .contact, .services {
+      background: rgba(39, 39, 39, 0.8);
+    }
+    .services-list {
+      display: flex;
+      flex-direction: row;
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact input, .contact textarea {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .contact input[type="submit"] {
+      background: #00D1FF;
+      color: #141e30;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .contact input[type="submit"]:hover {
+      background: #141e30;
+      color: #00D1FF;
+    }
+    footer {
+      font-size: 0.6rem;
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Kevin Wells</h1>
+    <h2>Writer / Scholar / Nurse / Developer</h2>
+    <div class="about">
+      With over 14 years of experience as a nurse, I have a deep understanding of healthcare and patient care. I am currently transitioning into the tech industry, where I’m combining my healthcare background with a focus on technical writing and web development. My passions are in coding, content creation, and freelance writing.
+    </div>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/kevin-wells-tx" class="link" target="_blank">LinkedIn</a>
+      <a href="https://medium.com/@kevin-wells-tx" class="link" target="_blank">Medium</a>
+      <a href="portfolio.html" class="link" target="_blank">Portfolio</a>
+    </div>
+  </div>
+
+  <div class="services">
+    <h3>Services</h3>
+    <div class="services-list">
+      <div class="service-item">
+        <h4>Content Creation</h4>
+        <p>Writing articles, blog posts, and web content.</p>
+      </div>
+      <div class="service-item">
+        <h4>Web Development</h4>
+        <p>Building and maintaining websites using the latest technologies.</p>
+      </div>
+      <div class="service-item">
+        <h4>Technical Writing</h4>
+        <p>Creating clear, concise, and comprehensive documentation.</p>
+      </div>
+      <div class="service-item">
+        <h4>Consulting</h4>
+        <p>Providing expert advice in healthcare and technology.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact">
+    <h3>Contact Me</h3>
+    <form action="mailto:kwells2010@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <input type="submit" value="Send">
+    </form>
+  </div>
+
+  <footer>
+    Photo by <a href="https://unsplash.com/@readysetfreddy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" style="color: #00D1FF;">Freddy Castro</a> on Unsplash
+  </footer>
+</body>
+</html>
