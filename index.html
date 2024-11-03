@@ -154,6 +154,14 @@
       color: #FFFFFF;
     }
   </style>
+  <script>
+    window.onload = function() {
+        var visitorCount = localStorage.getItem('visitorCount') || 0;
+        visitorCount++;
+        localStorage.setItem('visitorCount', visitorCount);
+        document.getElementById('visitor-counter').innerText = visitorCount;
+    };
+</script>
 </head>
 <body>
   <div class="container">
@@ -202,6 +210,7 @@
   </div>
 
   <footer>
+    <div id="visitor-counter">0</div>
     Photo by <a href="https://unsplash.com/@readysetfreddy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" style="color: #00D1FF;">Freddy Castro</a> on Unsplash
   </footer>
 </body>
