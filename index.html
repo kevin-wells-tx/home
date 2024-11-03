@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:wght@400;500;700;900&display=swap');
+    
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -18,8 +19,9 @@
       align-items: center;
       text-align: center;
     }
+    
     .container, .contact, .services {
-      max-width: 1000px;
+      max-width: 100%;
       width: 80%;
       padding: 20px;
       background: rgba(39, 39, 39, 0.8);
@@ -27,7 +29,9 @@
       position: relative;
       overflow: hidden;
       margin-bottom: 20px;
+      min-height: 300px; /* Adjust this value as needed */
     }
+    
     .container::before, .contact::before, .services::before {
       content: "";
       background: url('freddy-castro-u3ajSXhZM_U-unsplash.jpg') no-repeat center center;
@@ -40,6 +44,7 @@
       z-index: -1;
       border-radius: 15px;
     }
+    
     h1 {
       font-family: 'Shrikhand', cursive;
       font-size: 5.5rem;
@@ -49,13 +54,15 @@
       margin-bottom: 0;
       letter-spacing: 5px;
     }
+    
     h2 {
       font-size: 1.6rem;
       color: #cc61df;
       margin-top: 5px;
     }
+    
     h3 {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       color: #00D1FF;
       margin-bottom: 10px;
       font-weight: bold;
@@ -63,8 +70,9 @@
       text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
       padding: 10px;
       background: rgba(0, 0, 0, 0.2);
-      border-radius: 10px;
+      border-radius: 1px;
     }
+    
     .about, .services-list {
       padding: 30px;
       font-size: 1.1rem;
@@ -72,12 +80,16 @@
       border-radius: 10px;
       margin-bottom: 20px;
     }
+    
     .links {
-      margin-top: 50px;
+      margin-top: 75px;
+      margin-bottom: 75px;
       display: flex;
-      justify-content: center;
-      gap: 15px;
+      flex-direction: row; /* Change to row for inline buttons */
+      gap: 20px; /* Space between buttons */
+      justify-content: center; /* Center the buttons */
     }
+    
     .link {
       color: #FFFFFF;
       text-decoration: none;
@@ -89,10 +101,12 @@
       background: transparent;
       transition: background 0.3s ease, color 0.3s ease;
     }
+    
     .link:hover {
       background: #00D1FF;
       color: #141e30;
     }
+    
     .services-list {
       display: flex;
       flex-direction: row;
@@ -100,58 +114,86 @@
       gap: 15px;
       justify-content: center;
     }
+    
     .service-item {
       background: rgba(255, 255, 255, 0.1);
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease, background 0.3s ease;
-      width: 45%; /* Adjust width for responsive layout */
+      width: calc(45% - 30px); /* Adjust width for responsive layout */
     }
+    
     .service-item:hover {
       transform: translateY(-5px);
       background: rgba(255, 255, 255, 0.2);
     }
+    
     .service-item h4 {
       margin: 0;
       margin-bottom: 10px;
       font-size: 1.3rem;
     }
+    
     .service-item p {
       margin: 0;
       font-size: 1rem;
     }
+    
     .contact, .services {
       background: rgba(39, 39, 39, 0.8);
     }
-    .services-list {
-      display: flex;
-      flex-direction: row;
-    }
+    
     .contact form {
       display: flex;
       flex-direction: column;
     }
+    
     .contact input, .contact textarea {
       padding: 10px;
       margin-bottom: 10px;
-      border: none;
+      border: 1px solid #00D1FF; /* Add border for visibility */
       border-radius: 5px;
       font-size: 1rem;
+      background-color: rgba(255, 255, 255, 0.1); /* Set background color for visibility */
+      color: #FFFFFF; /* Text color */
     }
+    
     .contact input[type="submit"] {
       background: #00D1FF;
       color: #141e30;
       cursor: pointer;
       transition: background 0.3s ease;
     }
+    
     .contact input[type="submit"]:hover {
       background: #141e30;
       color: #00D1FF;
     }
+    
     footer {
       font-size: 0.6rem;
       color: #FFFFFF;
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 3.5rem; /* Smaller font size for mobile */
+      }
+      h2 {
+        font-size: 1.3rem;
+      }
+      h3 {
+        font-size: 1.8rem;
+      }
+      .service-item {
+        width: calc(100% - 30px); /* Full width on smaller screens */
+      }
+      .links {
+        flex-direction: row; /* Keep inline on mobile */
+        gap: 10px; /* Smaller gap on mobile */
+      }
     }
   </style>
   <script>
@@ -166,7 +208,7 @@
 <body>
   <div class="container">
     <h1>Kevin Wells</h1>
-    <h2>Writer / Schol / Nurse / Developer</h2>
+    <h2>Writer / Scholar / Nurse / Developer</h2>
     <div class="about">
       With over 14+ years of experience as a nurse, I have a deep understanding of healthcare and patient care. I am currently transitioning into the tech industry, where I’m combining my healthcare background with a focus on technical writing and web development. My passions are in coding, content creation, and freelance writing.
     </div>
@@ -189,23 +231,23 @@
         <p>Building static websites using the latest technologies.</p>
       </div>
       <div class="service-item">
-        <h4>Technical Writing</h4>
-        <p>Creating clear, concise, and comprehensive documentation.</p>
+        <h4>Medical Record Review</h4>
+        <p>Quality assurance and data abstraction for medical records.</p>
       </div>
       <div class="service-item">
-        <h4>Consulting</h4>
-        <p>Providing expert advice in healthcare and technology.</p>
+        <h4>Web Development</h4>
+        <p>Building responsive websites and applications.</p>
       </div>
     </div>
   </div>
 
   <div class="contact">
     <h3>Contact Me</h3>
-    <form action="mailto:kwells2010@gmail.com" method="post" enctype="text/plain">
+    <form action="https://formspree.io/f/your-form-id" method="POST" enctype="text/plain">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <input type="submit" value="Send">
+      <input type="submit" value="Send Message">
     </form>
   </div>
 
